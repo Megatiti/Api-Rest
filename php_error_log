@@ -1,0 +1,148 @@
+[03-Jun-2022 03:40:55 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tittle_course' in 'where clause' in C:\xampp\htdocs\api-restfull\models\get.model.php:211
+Stack trace:
+#0 C:\xampp\htdocs\api-restfull\models\get.model.php(211): PDOStatement->execute()
+#1 C:\xampp\htdocs\api-restfull\controllers\get.controller.php(45): GetModel::getDataSearch('courses', '*', 'tittle_course', 'Dise\xC3\xB1o', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\api-restfull\routes\servicios\get.php(29): GetController::getDataSearch('courses', '*', 'tittle_course', 'Dise\xC3\xB1o', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\api-restfull\routes\routes.php(24): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\api-restfull\controllers\routes.controller.php(6): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\api-restfull\index.php(12): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\api-restfull\models\get.model.php on line 211
+[04-Jun-2022 00:46:56 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'database-1.relations' doesn't exist in C:\xampp\htdocs\api-restfull\models\get.model.php:232
+Stack trace:
+#0 C:\xampp\htdocs\api-restfull\models\get.model.php(232): PDOStatement->execute()
+#1 C:\xampp\htdocs\api-restfull\controllers\get.controller.php(45): GetModel::getDataSearch('relations', '*', 'title_course', 'php', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\api-restfull\routes\servicios\get.php(29): GetController::getDataSearch('relations', '*', 'title_course', 'php', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\api-restfull\routes\routes.php(24): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\api-restfull\controllers\routes.controller.php(6): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\api-restfull\index.php(12): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\api-restfull\models\get.model.php on line 232
+[04-Jun-2022 01:06:26 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'database-1.relations' doesn't exist in C:\xampp\htdocs\api-restfull\models\get.model.php:31
+Stack trace:
+#0 C:\xampp\htdocs\api-restfull\models\get.model.php(31): PDOStatement->execute()
+#1 C:\xampp\htdocs\api-restfull\controllers\get.controller.php(9): GetModel::getData('relations', '*', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\api-restfull\routes\servicios\get.php(37): GetController::getData('relations', '*', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\api-restfull\routes\routes.php(24): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\api-restfull\controllers\routes.controller.php(6): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\api-restfull\index.php(12): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\api-restfull\models\get.model.php on line 31
+[04-Jun-2022 01:10:23 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title_course_name_instructor' in 'where clause' in C:\xampp\htdocs\api-restfull\models\get.model.php:292
+Stack trace:
+#0 C:\xampp\htdocs\api-restfull\models\get.model.php(292): PDOStatement->execute()
+#1 C:\xampp\htdocs\api-restfull\controllers\get.controller.php(54): GetModel::getRelDataSearch('courses,instruc...', 'course,instruct...', '*', 'title_course_na...', 'php,Juan', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\api-restfull\routes\servicios\get.php(33): GetController::getRelDataSearch('courses,instruc...', 'course,instruct...', '*', 'title_course_na...', 'php,Juan', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\api-restfull\routes\routes.php(24): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\api-restfull\controllers\routes.controller.php(6): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\api-restfull\index.php(12): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\api-restfull\models\get.model.php on line 292
+[04-Jun-2022 02:17:33 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'database-1.relations' doesn't exist in C:\xampp\htdocs\api-restfull\models\get.model.php:330
+Stack trace:
+#0 C:\xampp\htdocs\api-restfull\models\get.model.php(330): PDOStatement->execute()
+#1 C:\xampp\htdocs\api-restfull\controllers\get.controller.php(63): GetModel::getDataRange('relations', '*', 'date_created_co...', '2022-01-01', '2022-06-31', NULL, NULL, NULL, NULL, 'id_instructor_c...', '3,8')
+#2 C:\xampp\htdocs\api-restfull\routes\servicios\get.php(39): GetController::getDataRange('relations', '*', 'date_created_co...', '2022-01-01', '2022-06-31', NULL, NULL, NULL, NULL, 'id_instructor_c...', '3,8')
+#3 C:\xampp\htdocs\api-restfull\routes\routes.php(24): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\api-restfull\controllers\routes.controller.php(6): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\api-restfull\index.php(12): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\api-restfull\models\get.model.php on line 330
+[04-Jun-2022 02:18:00 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'database-1.relations' doesn't exist in C:\xampp\htdocs\api-restfull\models\get.model.php:330
+Stack trace:
+#0 C:\xampp\htdocs\api-restfull\models\get.model.php(330): PDOStatement->execute()
+#1 C:\xampp\htdocs\api-restfull\controllers\get.controller.php(63): GetModel::getDataRange('relations', '*', 'date_created_co...', '2022-01-01', '2022-06-31', NULL, NULL, NULL, NULL, 'id_instructor_c...', '3,8')
+#2 C:\xampp\htdocs\api-restfull\routes\servicios\get.php(39): GetController::getDataRange('relations', '*', 'date_created_co...', '2022-01-01', '2022-06-31', NULL, NULL, NULL, NULL, 'id_instructor_c...', '3,8')
+#3 C:\xampp\htdocs\api-restfull\routes\routes.php(24): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\api-restfull\controllers\routes.controller.php(6): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\api-restfull\index.php(12): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\api-restfull\models\get.model.php on line 330
+[04-Jun-2022 02:18:52 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'database-1.relations' doesn't exist in C:\xampp\htdocs\api-restfull\models\get.model.php:330
+Stack trace:
+#0 C:\xampp\htdocs\api-restfull\models\get.model.php(330): PDOStatement->execute()
+#1 C:\xampp\htdocs\api-restfull\controllers\get.controller.php(63): GetModel::getDataRange('relations', '*', 'date_created_co...', '2022-01-01', '2022-06-31', NULL, NULL, NULL, NULL, 'id_instructor_c...', '3,8')
+#2 C:\xampp\htdocs\api-restfull\routes\servicios\get.php(39): GetController::getDataRange('relations', '*', 'date_created_co...', '2022-01-01', '2022-06-31', NULL, NULL, NULL, NULL, 'id_instructor_c...', '3,8')
+#3 C:\xampp\htdocs\api-restfull\routes\routes.php(24): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\api-restfull\controllers\routes.controller.php(6): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\api-restfull\index.php(12): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\api-restfull\models\get.model.php on line 330
+[04-Jun-2022 02:23:07 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* BETWEEN 'date_created_course' AND '2022-01-01'' at line 1 in C:\xampp\htdocs\api-restfull\models\get.model.php:330
+Stack trace:
+#0 C:\xampp\htdocs\api-restfull\models\get.model.php(330): PDOStatement->execute()
+#1 C:\xampp\htdocs\api-restfull\controllers\get.controller.php(63): GetModel::getDataRange('courses,instruc...', 'course_instruct...', '*', 'date_created_co...', '2022-01-01', '2022-06-31', NULL, NULL, NULL, NULL, 'id_instructor_c...')
+#2 C:\xampp\htdocs\api-restfull\routes\servicios\get.php(43): GetController::getDataRange('courses,instruc...', 'course_instruct...', '*', 'date_created_co...', '2022-01-01', '2022-06-31', NULL, NULL, NULL, NULL, 'id_instructor_c...', '3,8')
+#3 C:\xampp\htdocs\api-restfull\routes\routes.php(24): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\api-restfull\controllers\routes.controller.php(6): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\api-restfull\index.php(12): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\api-restfull\models\get.model.php on line 330
+[04-Jun-2022 02:23:25 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\api-restfull\models\get.model.php on line 348
+[04-Jun-2022 02:23:25 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\api-restfull\models\get.model.php on line 348
+[04-Jun-2022 02:23:25 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'courses.id__course_instructor' in 'on clause' in C:\xampp\htdocs\api-restfull\models\get.model.php:374
+Stack trace:
+#0 C:\xampp\htdocs\api-restfull\models\get.model.php(374): PDOStatement->execute()
+#1 C:\xampp\htdocs\api-restfull\controllers\get.controller.php(72): GetModel::getRelDataRange('courses,instruc...', 'course_instruct...', '*', 'date_created_co...', '2022-01-01', '2022-06-31', NULL, NULL, NULL, NULL, 'id_instructor_c...', '3,8')
+#2 C:\xampp\htdocs\api-restfull\routes\servicios\get.php(43): GetController::getRelDataRange('courses,instruc...', 'course_instruct...', '*', 'date_created_co...', '2022-01-01', '2022-06-31', NULL, NULL, NULL, NULL, 'id_instructor_c...', '3,8')
+#3 C:\xampp\htdocs\api-restfull\routes\routes.php(24): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\api-restfull\controllers\routes.controller.php(6): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\api-restfull\index.php(12): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\api-restfull\models\get.model.php on line 374
+[04-Jun-2022 02:24:27 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\api-restfull\models\get.model.php on line 348
+[04-Jun-2022 02:24:27 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\api-restfull\models\get.model.php on line 348
+[04-Jun-2022 02:24:27 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'courses.id__course_instructor' in 'on clause' in C:\xampp\htdocs\api-restfull\models\get.model.php:374
+Stack trace:
+#0 C:\xampp\htdocs\api-restfull\models\get.model.php(374): PDOStatement->execute()
+#1 C:\xampp\htdocs\api-restfull\controllers\get.controller.php(72): GetModel::getRelDataRange('courses,instruc...', 'course_instruct...', '*', 'date_created_co...', '2022-01-01', '2022-06-31', NULL, NULL, NULL, NULL, 'id_instructor_c...', '3,8')
+#2 C:\xampp\htdocs\api-restfull\routes\servicios\get.php(43): GetController::getRelDataRange('courses,instruc...', 'course_instruct...', '*', 'date_created_co...', '2022-01-01', '2022-06-31', NULL, NULL, NULL, NULL, 'id_instructor_c...', '3,8')
+#3 C:\xampp\htdocs\api-restfull\routes\routes.php(24): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\api-restfull\controllers\routes.controller.php(6): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\api-restfull\index.php(12): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\api-restfull\models\get.model.php on line 374
+[04-Jun-2022 02:28:29 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\api-restfull\models\get.model.php on line 348
+[04-Jun-2022 02:28:29 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\api-restfull\models\get.model.php on line 348
+[04-Jun-2022 02:28:29 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'courses.id__course_instructor' in 'on clause' in C:\xampp\htdocs\api-restfull\models\get.model.php:374
+Stack trace:
+#0 C:\xampp\htdocs\api-restfull\models\get.model.php(374): PDOStatement->execute()
+#1 C:\xampp\htdocs\api-restfull\controllers\get.controller.php(72): GetModel::getRelDataRange('courses,instruc...', 'course_instruct...', '*', 'date_created_co...', '2022-01-01', '2022-06-31', NULL, NULL, NULL, NULL, 'id_instructor_c...', '3,8')
+#2 C:\xampp\htdocs\api-restfull\routes\servicios\get.php(43): GetController::getRelDataRange('courses,instruc...', 'course_instruct...', '*', 'date_created_co...', '2022-01-01', '2022-06-31', NULL, NULL, NULL, NULL, 'id_instructor_c...', '3,8')
+#3 C:\xampp\htdocs\api-restfull\routes\routes.php(24): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\api-restfull\controllers\routes.controller.php(6): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\api-restfull\index.php(12): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\api-restfull\models\get.model.php on line 374
+[04-Jun-2022 02:46:19 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'database-1.coures' doesn't exist in C:\xampp\htdocs\api-restfull\models\get.model.php:196
+Stack trace:
+#0 C:\xampp\htdocs\api-restfull\models\get.model.php(196): PDOStatement->execute()
+#1 C:\xampp\htdocs\api-restfull\controllers\get.controller.php(36): GetModel::getRelDataFilter('coures,instruct...', 'course,instruct...', '*', 'id_instructor_c...', '4', 'id_course', 'desc', '0', '5')
+#2 C:\xampp\htdocs\api-restfull\routes\servicios\get.php(27): GetController::getRelDataFilter('coures,instruct...', 'course,instruct...', '*', 'id_instructor_c...', '4', 'id_course', 'desc', '0', '5')
+#3 C:\xampp\htdocs\api-restfull\routes\routes.php(24): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\api-restfull\controllers\routes.controller.php(6): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\api-restfull\index.php(12): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\api-restfull\models\get.model.php on line 196
+[04-Jun-2022 02:46:29 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'database-1.course' doesn't exist in C:\xampp\htdocs\api-restfull\models\get.model.php:196
+Stack trace:
+#0 C:\xampp\htdocs\api-restfull\models\get.model.php(196): PDOStatement->execute()
+#1 C:\xampp\htdocs\api-restfull\controllers\get.controller.php(36): GetModel::getRelDataFilter('course,instruct...', 'course,instruct...', '*', 'id_instructor_c...', '4', 'id_course', 'desc', '0', '5')
+#2 C:\xampp\htdocs\api-restfull\routes\servicios\get.php(27): GetController::getRelDataFilter('course,instruct...', 'course,instruct...', '*', 'id_instructor_c...', '4', 'id_course', 'desc', '0', '5')
+#3 C:\xampp\htdocs\api-restfull\routes\routes.php(24): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\api-restfull\controllers\routes.controller.php(6): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\api-restfull\index.php(12): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\api-restfull\models\get.model.php on line 196
+[04-Jun-2022 02:47:19 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\api-restfull\models\get.model.php on line 383
+[04-Jun-2022 02:47:19 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\api-restfull\models\get.model.php on line 383
+[04-Jun-2022 02:47:19 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'courses.id__course_instructor' in 'on clause' in C:\xampp\htdocs\api-restfull\models\get.model.php:409
+Stack trace:
+#0 C:\xampp\htdocs\api-restfull\models\get.model.php(409): PDOStatement->execute()
+#1 C:\xampp\htdocs\api-restfull\controllers\get.controller.php(72): GetModel::getRelDataRange('courses,instruc...', 'course_instruct...', '*', 'date_created_co...', '2022-01-01', '2022-06-31', NULL, NULL, NULL, NULL, 'id_instructor_c...', '3,8')
+#2 C:\xampp\htdocs\api-restfull\routes\servicios\get.php(43): GetController::getRelDataRange('courses,instruc...', 'course_instruct...', '*', 'date_created_co...', '2022-01-01', '2022-06-31', NULL, NULL, NULL, NULL, 'id_instructor_c...', '3,8')
+#3 C:\xampp\htdocs\api-restfull\routes\routes.php(24): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\api-restfull\controllers\routes.controller.php(6): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\api-restfull\index.php(12): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\api-restfull\models\get.model.php on line 409
