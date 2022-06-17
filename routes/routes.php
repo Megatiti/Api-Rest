@@ -1,4 +1,6 @@
 <?php
+require_once "models/connection.php";
+require_once "controllers/get.controller.php";
 
 $routesArray = explode("/", $_SERVER['REQUEST_URI']);
 $routesArray = array_filter($routesArray);
@@ -7,9 +9,8 @@ $routesArray = array_filter($routesArray);
 if(empty($routesArray)){
     $json = array(
         'status' => 404,
-        'result' => "not found"
+        'results' => "not found"
     );
-    
     echo json_encode($json, http_response_code($json["status"]));
     
     return;
@@ -17,50 +18,46 @@ if(empty($routesArray)){
 
 //con peticiones a la api
 if(!empty($routesArray) && isset($_SERVER["REQUEST_METHOD"])){
-    //PETICIONES GET
 
+    $table = explode("?", $routesArray[1])[0];
+
+    //valida llave secreta
+    if(!isset(getallheaders()["Authorization"]) || getallheaders()["Authorization"] != Connection::apiKey()){
+        if(in_array($table, Connection::publicAccess()) == 0){
+            $json = array(
+                'status' => 400,
+                'results' => "No estas autorizado"
+            );
+            echo json_encode($json, http_response_code($json["status"]));
+            
+            return;
+        }else{
+            //acesso publico
+            $response = new GetController();
+            $response->getData($table, "*", null, null, null, null);
+
+            return;
+        }
+    }
+
+    //PETICIONES GET
     if($_SERVER["REQUEST_METHOD"] == "GET"){
-        
         include "servicios/get.php";
     }
 
     //PETICIONES POST
-
     if($_SERVER["REQUEST_METHOD"] == "POST"){
-        $json = array(
-            'status' => 202,
-            'result' => "PAGINA POST"
-        );
-        
-        echo json_encode($json, http_response_code($json["status"]));
-        
-        return;
+        include "servicios/post.php";
     }
 
     //PETICIONES PUT
-
     if($_SERVER["REQUEST_METHOD"] == "PUT"){
-        $json = array(
-            'status' => 202,
-            'result' => "PAGINA PUT"
-        );
-        
-        echo json_encode($json, http_response_code($json["status"]));
-        
-        return;
+        include "servicios/put.php";
     }
 
     //PETICIONES DELETE
-
     if($_SERVER["REQUEST_METHOD"] == "DELETE"){
-        $json = array(
-            'status' => 202,
-            'result' => "PAGINA DELETE"
-        );
-        
-        echo json_encode($json, http_response_code($json["status"]));
-        
-        return;
+        include "servicios/delete.php";
     }
 }
 
